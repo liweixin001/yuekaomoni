@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <EditText
+            android:id="@+id/souzhou"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+            android:hint="搜索你要搜索的手机"
+            />
+        <Button
+            android:id="@+id/sousuo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="搜索"
+            android:layout_weight="1"
+            android:padding="10dp"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/lishi"
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+        android:text="最近搜索"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/list_ite"
+        android:layout_width="match_parent"
+        android:layout_height="142dp">
+
+    </ListView>
+    <TextView
+        android:id="@+id/sousuofaxian"
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+        android:text="搜索发现"
+        android:textStyle="bold" />
+    <com.fynn.fluidlayout.FluidLayout
+        android:id="@+id/liushi"
+        android:layout_width="match_parent"
+        android:layout_height="125dp">
+
+    </com.fynn.fluidlayout.FluidLayout>
+
+</LinearLayout>
